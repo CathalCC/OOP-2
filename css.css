@@ -1,0 +1,212 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-Mar-2022, 21:57:34
+    Author     : catha
+*/
+
+/*These colors were set at the begining for a consistent color palette
+but as the project progressed it was found that other colors were better used
+in some places*/
+:root{
+    --color-primary: #00a7a9;
+    --color-bg: #0b2d39;
+    --color-secondary: #580ff7;
+    --text-font: 500 1.25rem "Poppins", sans-serif;
+}
+
+/*The masthead and nav items are largely taken from Bootstrap, but were
+brought into this CSS file as I found it made the easier to customize*/
+.masthead {
+  background-color: var(--color-primary);
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
+  box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
+}
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.nav-item:hover,
+.nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav .active {
+  color: #fff;
+}
+.nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+.containerform {
+    position: absolute; 
+    top: 20px;
+    left: 520px;
+    text-align: center;
+    align-items: center;
+    width: 400px;
+    max-width: 400px;
+    border-radius: 100px;
+    padding: 30px;
+    background: var(--color-primary);
+}
+
+.container{
+    background: white;
+    padding-bottom: 25px;
+}
+
+.homepagebutton{
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.table{
+    background:white;
+}
+
+.header-box {
+    box-sizing: content-box;
+    float: none;
+    position: static;
+    background: var(--color-primary);
+    padding-bottom: 2rem;
+    text-align: right;
+}
+
+.redirectbutton{
+    cursor: pointer;
+    background: var(--color-secondary);
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    font: var(--text-font);
+    width: 75px;
+    border-radius: 1rem;
+}
+
+.redirectbutton:active{
+    transform: scale(0.95);
+}
+
+/*Much of this was taken directly from Bootstrap, but I chose to put it here
+rather than just use it from Bootstrap as has been done with some other Bootstrap
+functions because it made it easier to customize the color, active and hover effects of the button
+which I was not pleased with from the default taken from Bootstrap */
+.collapsebutton{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    cursor: pointer;
+    background: var(--color-secondary);
+}
+
+.buttontext{
+    color: black;
+    font: var(--text-font);
+    font-size: 1rem;
+}
+
+/*Leaving this on default looked poor, so it was changed to change on hover*/
+.buttontext:hover{
+    color:white;
+}
+
+/*This was used for the sake of giving some feedback, if only minor
+when clicking a button */
+.collapsebutton:active{
+    transform: scale(0.95);
+}
+
+.containerform,
+.field{
+    font: var(--text-font);
+}
+
+.formtitle{
+    font-size: 30px;
+}
+
+.formbutton{
+    cursor: pointer;
+    padding: 2rem 5rem;
+    background: var(--color-secondary);
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    font: var(--text-font);
+}
+
+/*This was used for the sake of giving some feedback, if only minor
+when clicking a button */
+.formbutton:active{
+    transform: scale(0.95);
+}
+
+.inputfield{
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+.text{
+    font: var(--text-font);
+    background-color: purple;
+}
+
+.headings{
+    padding-top: 20px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/*Used for the profile page for the sake of centering the text and not having
+page be a strip of white on the purple background, this makes the page mostly
+white*/
+.profile{
+    padding-top: 250px;
+    padding-bottom: 260px;
+}
+
+/*This was used for any placements of the NUIG logo*/
+.pimage{
+   position: absolute; 
+    left: 520px;
+    align-items: center;
+    width: 500px;
+    max-width: 500px;
+    padding: 30px;
+}
